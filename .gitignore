@@ -1,0 +1,8 @@
+# Local Kubernetes output and credentials
+*.kubeconfig
+.env
+.env.*
+
+# Generated files
+*.log
+.DS_Store
