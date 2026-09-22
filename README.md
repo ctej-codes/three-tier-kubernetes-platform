@@ -9,7 +9,7 @@ A simple Kubernetes application with three tiers:
 ## Project Structure
 
 ```text
-k8s/
+three-tier-kubernetes-platform/
 ├── 01-secret.yaml
 ├── 02-cache-pvc.yaml
 ├── 03-cache.yaml
@@ -27,7 +27,7 @@ k8s/
 ## Deploy
 
 ```bash
-kubectl apply -k k8s/
+kubectl apply -k three-tier-kubernetes-platform/
 kubectl get pods,services,pvc
 ```
 
@@ -61,7 +61,7 @@ Redis is available inside the cluster at `cache:6379`.
 ## Remove
 
 ```bash
-kubectl delete -k k8s/
+kubectl delete -k three-tier-kubernetes-platform/
 ```
 
 Do not commit real credentials to the repository. Kubernetes Secrets should be protected with encryption at rest or an external secret manager in production.
